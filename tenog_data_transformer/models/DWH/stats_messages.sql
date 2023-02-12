@@ -8,8 +8,8 @@ stats_mess_pair as (
     FROM {{ ref('pair_messages') }}
 )
 
-SELECT nb_mess_impair 
+SELECT 'nb_mess_impair' as title, nb_mess_impair 
 FROM stats_mess_impair
 UNION
-SELECT nb_mess_pair 
+SELECT 'nb_mess_impair' as title, nb_mess_pair 
 FROM stats_mess_pair
