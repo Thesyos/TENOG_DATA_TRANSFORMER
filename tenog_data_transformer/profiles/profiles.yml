@@ -1,0 +1,24 @@
+tenog_data_transformer:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 2
+      host: 127.0.0.1
+      port: 5433
+      user: postgres
+      pass: root
+      dbname: tenog
+      schema: public
+
+    prod:
+      type: postgres
+      threads: 5
+      host: host.docker.internal
+      port: 5433
+      user: postgres
+      pass: root
+      dbname: tenog
+      schema: public
+
+  target: dev

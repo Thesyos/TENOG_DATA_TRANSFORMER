@@ -34,5 +34,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   tenog_data_transformer:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    ODS:
+      +materialized: incremental
+      +schema: ODS
+    DWH:
+      +materialized: table
+      +schema: DWH
+
