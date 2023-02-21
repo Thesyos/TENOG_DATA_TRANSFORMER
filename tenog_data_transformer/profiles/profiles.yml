@@ -21,4 +21,4 @@ tenog_data_transformer:
       dbname: tenog
       schema: public
 
-  target: dev
+  target: prod
